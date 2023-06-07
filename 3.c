@@ -37,7 +37,7 @@ int main()
 {
     int i, len, rest;
     printf("\n\t\t\tAT SOURCE NODE\n\nenter the data to be send :");
-    gets(data);
+    fgets(data);
     strcpy(concatdata, data);
     strcat(concatdata, "0000000000000000");
     for (i = 0; i <= 16; i++)
@@ -50,7 +50,7 @@ int main()
     printf("\n%s%s", data, src_crc);
     printf("\n\t\tSOURCE NODE TRANSMITTED THE FRAME ---->");
     printf("\n\n\n\n\t\t\tAT DESTINATION NODE\nenter the received frame:\t");
-    gets(frame);
+    fgets(frame);
     for (i = 0; i <= 16; i++)
         divident[i] = frame[i];
     divident[i + 1] = '\0';
