@@ -38,9 +38,9 @@ len=strlen(data);
 for(i=0;i<len;i++)
 {m=(unsigned long) data[i];
 c=modexp(m,e,n);
-printf("\nencrypted key and its representation is %lu\t%c\n",c,c);
+printf("\nencrypted key and its representation is %lu\t%lu\n",c,c);
 m=modexp(c,d,n);
-printf("\ndecrypted key and its representation is %lu\t%c\n",m,m);
+printf("\ndecrypted key and its representation is %lu\t%lu\n",m,m);
 }
 printf("\n decrypted msg is %s\n%lu\n%lu",data,c,m);
 }
